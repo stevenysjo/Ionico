@@ -1,17 +1,34 @@
 <ion-view title="What's Hot">
+    <ion-nav-bar class="bar-dark">
+    </ion-nav-bar>
   <ion-content class="padding" style="background-color:#222222">
+      <div ng-click="modal.show()" style="width:300%; height: 200px;background-color:yellow">
+          <h2>Banner</h2>
+      </div>
+
       <center>
-        <div style="width:80%; height: 300px;background-color:#4169E1" href="#/friend">
-            <h2>Event</h2>
-        </div>
+          </br>        </br>
+        <button ng-click="onClick()" style="width:80%; height: 100px;background-color:#4169E1" href="#/tab/dash/events">
+            <h2>Events</h2>
+        </button>
+        </br>        </br>
         </br>
-        <div style="width:80%; height: 300px;background-color:#0000FF">
-            <h2>Promo</h2>
-        </div>
-        </br>
-        <div style="width:80%; height: 300px;background-color:#00008B">
-            <h2>Places</h2>
-        </div>
+
+        <button ng-click="onClick()" style="width:80%; height: 100px;background-color:#0000FF">
+            <h2>Dining</h2>
+        </button>
     </center>
   </ion-content>
 </ion-view>
+
+<script id="modal.html" type="text/ng-template">
+    <div class="modal">
+    <header class="bar bar-header bar-dark">
+    <h1 class="title">Banner Info</h1>
+    <div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
+    </header>
+    <content has-header="true" padding="true">
+    <p>This is a modal</p>
+    </content>
+    </div>
+</script>
