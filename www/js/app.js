@@ -47,7 +47,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
+    .state('tab.search', {
+           url: '/search',
+           views: {
+           'tab-search': {
+           templateUrl: 'templates/tab-search.html',
+           controller: 'SearchCtrl'
+           }
+       }
+   })
     .state('tab.friends', {
       url: '/friends',
       views: {
@@ -66,7 +74,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
+    .state('tab.events', {
+           url: '/dash/events',
+           views: {
+           'tab-dash': {
+           templateUrl: 'templates/tab-events.html',
+           controller: 'EventsCtrl'
+           }
+       }
+   })
     .state('tab.account', {
       url: '/account',
       views: {

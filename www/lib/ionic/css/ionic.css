@@ -3653,7 +3653,9 @@ a.subdued {
 
 .tabs-icon-top > .tabs .tab-item, .tabs-icon-top.tabs .tab-item, .tabs-icon-bottom > .tabs .tab-item, .tabs-icon-bottom.tabs .tab-item {
   font-size: 12px;
-  line-height: 14px; }
+  line-height: 14px;
+  background-color: gray;
+}
 
 .tab-item .icon {
   display: block;
