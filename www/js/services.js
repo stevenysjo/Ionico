@@ -8,10 +8,10 @@ angular.module('starter.services', [])
 
   // Some fake testing data
   var friends = [
-    { id: 0, name: 'Scruff McGruff' },
-    { id: 1, name: 'G.I. Joe' },
-    { id: 2, name: 'Miss Frizzle' },
-    { id: 3, name: 'Ash Ketchum' }
+    { id: 0, name: 'Tanjung Duren' },
+    { id: 1, name: 'Senopati' },
+    { id: 2, name: 'PIK' },
+    { id: 3, name: 'Mangga Besar' }
   ];
 
   return {
